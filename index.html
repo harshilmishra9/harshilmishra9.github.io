@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harshil Mishra | Operational Excellence &amp; Digital Manufacturing</title>
+<meta name="description" content="Portfolio of Harshil Mishra: operational excellence, industrial engineering and digital manufacturing, from Lean Six Sigma to MES and ERP applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f6;--surface:#fff;--ink:#12212e;--mute:#51606d;--line:#cfd7de;--accent:#e8a800;--accent-ink:#12212e;--steel:#1d5a7e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1821;--surface:#14232f;--ink:#e8eef3;--mute:#9db0bf;--line:#28404f;--steel:#6db3dd;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1821;--surface:#14232f;--ink:#e8eef3;--mute:#9db0bf;--line:#28404f;--steel:#6db3dd;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 Barlow,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;font-weight:700;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.6rem;padding-bottom:.6rem}
+nav{display:flex;gap:1.1rem;overflow-x:auto;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none;color:var(--mute);white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:2rem;padding:.3rem .8rem;font:inherit;font-size:.9rem;cursor:pointer}
+.hero{padding:3.5rem 0 2.5rem}
+.hero h1{font-size:clamp(3.4rem,13vw,8rem);letter-spacing:-.01em}
+.hero p.role{font-size:clamp(1.15rem,3vw,1.5rem);max-width:38rem;margin:1rem 0 1.5rem;color:var(--mute)}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:.3rem;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+section{padding:2.5rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:1.25rem}
+.dmaic{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;overflow:hidden}
+.phases{display:grid;grid-template-columns:repeat(5,1fr)}
+.phases button{font:700 1.15rem "Barlow Condensed",sans-serif;padding:.9rem .2rem;border:0;border-right:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer;position:relative}
+.phases button:last-child{border-right:0}
+.phases button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.panel{padding:1.25rem}
+.panel h3{font-size:1.6rem;margin-bottom:.4rem}
+.panel p{margin:0;max-width:44rem}
+.job{display:grid;gap:.3rem 2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--mute);font-weight:500}
+.job h3{font-size:1.7rem}
+.job ul{margin:.6rem 0 0;padding-left:1.2rem}
+.job li{margin:.35rem 0;max-width:46rem}
+@media(min-width:48rem){.job{grid-template-columns:13rem 1fr}.job ul{margin-top:0}}
+.proj{display:grid;gap:1rem}
+@media(min-width:48rem){.proj{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:.3rem;padding:1.25rem}
+.card h3{font-size:1.5rem;margin-bottom:.6rem}
+.card ul{margin:0;padding-left:1.15rem}
+.card li{margin:.35rem 0}
+.skills{display:flex;flex-wrap:wrap;gap:.5rem}
+.skills span{border:1px solid var(--line);background:var(--surface);padding:.35rem .8rem;border-radius:2rem;font-weight:500;font-size:.95rem}
+.two{display:grid;gap:2rem}
+@media(min-width:48rem){.two{grid-template-columns:1fr 1fr}}
+.two h3{font-size:1.5rem;margin:0 0 .6rem}
+.two ul{margin:0;padding-left:1.15rem}
+.two li{margin:.4rem 0}
+.stat{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2rem}
+.stat div{border-top:4px solid var(--accent);padding-top:.5rem;min-width:8rem}
+.stat b{display:block;font:700 2.6rem/1 "Barlow Condensed",sans-serif}
+.stat small{color:var(--mute);font-size:.95rem}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--mute)}
+footer a{color:var(--ink)}
+.hero .hero-text h1{font-size:clamp(3.2rem,11vw,6.5rem)}
+.hero-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:48rem){.hero-grid{grid-template-columns:1fr 17rem}}
+.photo{position:relative;margin:0;width:12rem;aspect-ratio:4/5;background:var(--steel);border-radius:.3rem;border-bottom:8px solid var(--accent);overflow:hidden;display:grid;place-items:center}
+@media(min-width:48rem){.photo{width:100%}}
+.photo span{font:700 4rem "Barlow Condensed",sans-serif;color:var(--bg)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about p{max-width:44rem;margin:0 0 1rem}
+.certs{display:grid;gap:1rem}
+@media(min-width:48rem){.certs{grid-template-columns:repeat(3,1fr)}}
+.certs .card p{margin:0}
+
+:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#071326;--surface:#0e2240;--ink:#e8f0fb;--mute:#9db2cc;--line:#1f3a60;--steel:#62b4ff;--accent:#f2b705;--accent-ink:#071326;color-scheme:dark}
+:root[data-theme="light"]{--bg:#e9eff8;--surface:#fff;--ink:#0a1c38;--mute:#4a5f7c;--line:#c3d2e6;--steel:#1d4e89;--accent:#f2b705;--accent-ink:#0a1c38;color-scheme:light}
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+body{background:radial-gradient(ellipse 80% 50% at 50% -10%,color-mix(in srgb,var(--steel) 28%,transparent),transparent) fixed,var(--bg)}
+header.top{background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom-color:color-mix(in srgb,var(--steel) 25%,transparent)}
+nav a{position:relative;padding:.2rem 0;transition:color .25s}
+nav a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:hover::after,nav a.on::after{transform:scaleX(1)}
+nav a.on{color:var(--ink)}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--steel),var(--accent));z-index:20}
+.herobg{position:relative;overflow:hidden}
+.herobg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--steel) 14%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--steel) 14%,transparent) 1px,transparent 1px);background-size:3rem 3rem;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 75%);pointer-events:none}
+.orbs i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;animation:drift 14s ease-in-out infinite alternate}
+.orbs i:nth-child(1){width:22rem;height:22rem;background:#1d4ed8;top:-6rem;left:-5rem}
+.orbs i:nth-child(2){width:18rem;height:18rem;background:#0ea5e9;right:-4rem;top:4rem;animation-duration:18s;animation-delay:-4s}
+.orbs i:nth-child(3){width:16rem;height:16rem;background:#312e81;left:35%;bottom:-8rem;animation-duration:22s}
+.hero{position:relative;z-index:1}
+.hero .hero-text h1{background:linear-gradient(95deg,var(--ink) 40%,var(--steel));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-text>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-text>:nth-child(2){animation-delay:.12s}.hero-text>:nth-child(3){animation-delay:.24s}.hero-text>:nth-child(4){animation-delay:.36s}.hero-text>:nth-child(5){animation-delay:.48s}
+.typed{font:700 clamp(1.4rem,4vw,2rem)/1.2 "Barlow Condensed",sans-serif;color:var(--steel);margin:0 0 1rem;min-height:2.4rem}
+.caret{display:inline-block;width:3px;height:1.1em;background:var(--accent);margin-left:3px;vertical-align:-.15em;animation:blink 1s steps(1) infinite}
+.photo{background:conic-gradient(from var(--a),var(--steel),#2563eb,var(--accent),var(--steel));padding:4px;border:0;border-radius:1.2rem;overflow:visible;box-shadow:0 20px 60px -15px color-mix(in srgb,var(--steel) 55%,transparent);animation:ang 6s linear infinite,float 7s ease-in-out infinite}
+.photo img{inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);border-radius:1rem}
+.photo span{display:none}
+.btn{transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px -8px color-mix(in srgb,var(--accent) 60%,transparent)}
+.btn:not(.main){border-color:var(--steel);color:var(--ink)}
+.stat div{border-top-color:var(--steel);background:color-mix(in srgb,var(--surface) 70%,transparent);padding:.8rem 1rem;border-radius:.3rem;backdrop-filter:blur(6px)}
+.stat b{color:var(--accent)}
+.marquee{overflow:hidden;border-block:1px solid var(--line);background:var(--surface);padding:.8rem 0}
+.track{display:flex;gap:2.4rem;width:max-content;animation:mq 38s linear infinite}
+.track span{font:700 1.35rem "Barlow Condensed",sans-serif;white-space:nowrap;color:var(--steel)}
+.track span::after{content:"";display:inline-block;width:.45rem;height:.45rem;margin-left:2.4rem;background:var(--accent);transform:rotate(45deg)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+section>.wrap>h2::after{content:"";display:block;height:4px;width:0;margin-top:.5rem;background:linear-gradient(90deg,var(--accent),var(--steel));transition:width .9s .2s}
+section>.wrap>h2.in::after{width:4.5rem}
+.card,.job,.thumb,.skills span{transition:opacity .7s ease,transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s,background .3s,color .3s;transition-delay:var(--d,0s)}
+.card{background:linear-gradient(160deg,var(--surface),color-mix(in srgb,var(--surface) 70%,var(--bg)))}
+.card:hover,.thumb:hover{transform:translateY(-6px);border-color:var(--steel);box-shadow:0 18px 40px -18px color-mix(in srgb,var(--steel) 70%,transparent)}
+.skills span:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);transform:translateY(-3px)}
+.thumb img{transition:transform .5s}.thumb:hover img{transform:scale(1.06)}
+.thumb{overflow:hidden}
+.job:hover h3{color:var(--steel)}
+.job h3{transition:color .25s}
+.dmaic{box-shadow:0 20px 50px -30px color-mix(in srgb,var(--steel) 60%,transparent)}
+.phases button{transition:background .3s,color .3s}
+.phases button:hover{color:var(--ink)}
+.panel>*{animation:fade .45s ease both}
+footer{background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--surface) 80%,transparent))}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,40px) scale(1.2)}}
+@keyframes ang{to{--a:360deg}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes mq{to{transform:translateX(-50%)}}
+.gal-h{font-size:1.6rem;margin:2rem 0 .3rem}
+.gal-p{margin:0 0 1rem;color:var(--mute);max-width:44rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.8rem}
+.thumb{display:block;width:100%;padding:0;border:1px solid var(--line);background:var(--surface);border-radius:.3rem;cursor:pointer;text-align:left;font:inherit;color:inherit;overflow:hidden}
+.thumb img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;background:var(--line)}
+.thumb span{display:block;padding:.5rem .6rem .6rem;font-size:.9rem;line-height:1.3;font-weight:500}
+.early{margin:1.5rem 0 0;padding-left:1.15rem}
+.early li{margin:.3rem 0}
+dialog.lb{border:0;padding:0;background:var(--surface);color:var(--ink);width:min(60rem,96vw);max-height:94vh;border-radius:.4rem}
+dialog.lb::backdrop{background:rgba(5,12,18,.8)}
+.lb-in{display:flex;flex-direction:column;max-height:94vh}
+.lb-in img{display:block;max-width:100%;max-height:70vh;margin:0 auto;object-fit:contain;background:var(--bg)}
+.lb-bar{padding:.8rem 1rem;display:flex;gap:.6rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.lb-bar p{margin:0;flex:1 1 14rem}
+.lb-bar small{display:block;color:var(--mute)}
+.lb-bar button{font:inherit;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:.3rem;padding:.4rem .9rem;cursor:pointer}
+
+[hidden]{display:none!important}
+.wrap.hero{padding-left:1.25rem;padding-right:1.25rem}
+.headline{font:700 clamp(1.6rem,4.4vw,2.4rem)/1.12 "Barlow Condensed","Arial Narrow",sans-serif;margin:.9rem 0 .4rem}
+.sub{color:var(--steel);font-weight:600;margin:0 0 .9rem}
+.intro{color:var(--mute);max-width:40rem;margin:0 0 1.4rem}
+.hero-text>:nth-child(6){animation-delay:.6s}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:1rem}
+.m{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--steel);border-radius:.3rem;padding:1rem 1.1rem}
+.m b{display:block;font:700 2.7rem/1 "Barlow Condensed",sans-serif;color:var(--accent)}
+.m strong{display:block;margin:.3rem 0 .2rem}
+.m small{color:var(--mute);font-size:.9rem;line-height:1.35;display:block}
+.note{color:var(--mute);font-size:.92rem;margin-top:1rem;max-width:46rem}
+.prop{font:600 clamp(1.3rem,3vw,1.7rem)/1.3 "Barlow Condensed",sans-serif;border-left:4px solid var(--accent);padding-left:1rem;margin:0 0 1.2rem;max-width:44rem}
+.tl{border-left:2px solid var(--line);margin-left:.4rem;padding-left:1.4rem}
+.tl .job{position:relative}
+.tl .job::before{content:"";position:absolute;left:-1.95rem;top:1.9rem;width:.7rem;height:.7rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.outs{margin-top:.9rem;padding:.7rem .9rem;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 .3rem .3rem 0}
+.outs b{display:block;margin-bottom:.2rem}
+.outs ul{margin:0;padding-left:1.1rem}
+.cats{display:grid;gap:1rem}
+@media(min-width:48rem){.cats{grid-template-columns:1fr 1fr}}
+.cats h3{font-size:1.5rem;margin-bottom:.7rem}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.filters button{font:600 .95rem Barlow,system-ui,sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.45rem 1rem;border-radius:2rem;cursor:pointer;transition:background .25s,color .25s}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pgrid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr))}
+.pc{display:flex;flex-direction:column;gap:.6rem}
+.pc .tag{font-size:.82rem;font-weight:600;color:var(--steel)}
+.pc h3{font-size:1.45rem;margin:0}
+.pc p{margin:0;color:var(--mute);font-size:.98rem}
+.pc .out{color:var(--ink);font-weight:600;border-left:3px solid var(--accent);padding-left:.6rem}
+button.btn{font:inherit;font-weight:600;background:transparent;color:var(--ink);cursor:pointer;margin-top:auto;align-self:flex-start}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips span{font-size:.82rem;border:1px solid var(--line);padding:.15rem .6rem;border-radius:2rem;color:var(--mute)}
+dialog.pm{border:0;padding:1.4rem;background:var(--surface);color:var(--ink);width:min(48rem,96vw);max-height:92vh;overflow:auto;border-radius:.4rem}
+dialog.pm::backdrop{background:rgba(5,12,18,.8)}
+dialog.pm h3{font-size:2rem;margin:.2rem 0 .8rem}
+dialog.pm h4{font:700 1.15rem "Barlow Condensed",sans-serif;color:var(--steel);margin:1.1rem 0 .25rem}
+dialog.pm p{margin:0}
+.flow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.4rem}
+.flow span{border:1px solid var(--steel);padding:.4rem .7rem;border-radius:.3rem;font-weight:600;font-size:.92rem;background:var(--bg)}
+.flow i{color:var(--accent);font-style:normal;font-weight:700}
+.ill{font-size:.8rem;color:var(--mute);margin-top:.4rem}
+.pm .close{margin-top:1.2rem}
+.links a{color:var(--steel)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1!important;transform:none!important}.progress{display:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+<header class="top"><div class="wrap">
+<nav aria-label="Sections"><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
+<button class="theme" id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button>
+</div></header>
+<main>
+<div class="herobg" id="home"><div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap hero">
+<div class="hero-grid"><div class="hero-text">
+<h1>Harshil Mishra</h1>
+<h2 class="headline">Operational Excellence &amp; Digital Manufacturing Professional</h2>
+<p class="sub">Associate Manager | Application &amp; Industrial Engineering | Lean Six Sigma | Process Optimization | Smart Manufacturing</p>
+<p class="intro">I turn operational challenges into measurable business improvements through industrial engineering, Lean methodologies, data analytics and digital solutions. My work spans process optimization, productivity improvement, operational visibility, compliance monitoring and application development.</p>
+<div class="btns"><a class="btn main" href="#projects">Explore Projects</a><a class="btn" href="#certifications">View Certificates</a><a class="btn" href="mailto:harshilmishra26@gmail.com">Email me</a></div>
+</div>
+<figure class="photo"><span aria-hidden="true">HM</span><img src="photo.jpg" alt="Portrait of Harshil Mishra" onerror="this.remove()"></figure>
+</div></div></div>
+<div class="marquee" aria-hidden="true"><div class="track"><span>Operational Excellence</span><span>Industrial Engineering</span><span>Digital Manufacturing</span><span>Lean Six Sigma</span><span>Kaizen</span><span>SMED</span><span>OEE</span><span>Power BI</span><span>Python</span><span>MES and ERP</span><span>Predictive Maintenance</span><span>Process Optimization</span><span>Operational Excellence</span><span>Industrial Engineering</span><span>Digital Manufacturing</span><span>Lean Six Sigma</span><span>Kaizen</span><span>SMED</span><span>OEE</span><span>Power BI</span><span>Python</span><span>MES and ERP</span><span>Predictive Maintenance</span><span>Process Optimization</span></div></div>
+
+<section id="impact"><div class="wrap">
+<h2>Impact at a glance</h2>
+<div class="metrics">
+<div class="m"><b data-n="200" data-s="+">200+</b><strong>Kaizen projects</strong><small>Led or contributed to, at Biocon Biologics (reported)</small></div>
+<div class="m"><b data-p="₹" data-n="5" data-s="+ crore">₹5+ crore</b><strong>Reported savings</strong><small>Cumulative across improvement initiatives at Biocon Biologics</small></div>
+<div class="m"><b data-n="6" data-s="">6</b><strong>Inventory units</strong><small>Covered by the Power BI inventory dashboard</small></div>
+<div class="m"><b data-n="6" data-s="">6</b><strong>Application modules</strong><small>In the Chrysalis MES cum ERP application</small></div>
+<div class="m"><b data-p="~" data-n="2" data-s=" days">~2 days</b><strong>Lower MTTR</strong><small>Reported from the predictive maintenance initiative</small></div>
+<div class="m"><b data-p="~" data-n="50" data-s="%">~50%</b><strong>Less reporting time</strong><small>Reported for inventory reporting after the dashboard</small></div>
+</div>
+<p class="note">These figures come from different projects and scopes. They are reported project outcomes, are not additive, and were not all achieved at one employer.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<h2>About me</h2>
+<p class="prop">I bridge manufacturing operations, industrial engineering and digital technology to improve productivity, compliance, visibility and business performance.</p>
+<p>I’m an engineering professional with experience in pharmaceutical and biologics manufacturing and in manufacturing operations. I look at how work actually flows on the floor, find where a process loses time, quality or visibility, and then fix it with Lean Six Sigma, data analysis and, where it helps, a purpose-built digital tool.</p>
+<p>That means working across five areas: manufacturing operations, operational excellence, industrial engineering, digital application development and data-driven problem-solving. I hold an M.Tech in Production Engineering from NIT Rourkela and a B.E. in Mechanical Engineering from SISTec, Bhopal.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Professional experience</h2>
+<div class="tl">
+<div class="job"><div class="when">2025 to present<br>Madurai</div>
+<div><h3>Associate Manager, Application &amp; Industrial Engineering</h3><p class="sub" style="margin:.2rem 0 .6rem">Amway India Enterprises</p>
+<ul>
+<li>Design application logic, modules, workflows and implementation steps for digital manufacturing applications.</li>
+<li>Develop digital solutions to track and monitor machines, production operations and manufacturing KPIs.</li>
+<li>Support industrial engineering work: productivity improvement, process optimization and manufacturing efficiency.</li>
+<li>Identify manual processes to digitize and improve operational visibility.</li>
+<li>Translate manufacturing requirements into application workflows and practical digital tools.</li>
+<li>Work with manufacturing, engineering, quality and safety teams to implement improvements.</li>
+</ul>
+<div class="outs"><b>Selected work</b><ul><li>Chrysalis MES cum ERP application (six modules)</li><li>Python-based production scheduler</li></ul></div></div></div>
+<div class="job"><div class="when">Jul 2022 to Sep 2025<br>Bengaluru</div>
+<div><h3>Senior Executive, Engineering &amp; Maintenance</h3><p class="sub" style="margin:.2rem 0 .6rem">Biocon Biologics Limited</p>
+<ul>
+<li>Delivered engineering and maintenance projects involving CAPEX, OPEX and operational improvement.</li>
+<li>Applied Lean manufacturing and continuous improvement: Kaizen, SMED, 5S, OEE improvement and Value Stream Mapping.</li>
+<li>Analyzed equipment performance and maintenance data; built KPI reports and dashboards in Power BI and Advanced Excel.</li>
+<li>Worked on predictive maintenance using IoT sensors, cloud systems and SAP integration.</li>
+<li>Implemented cross-functional projects with a focus on cost optimization.</li>
+</ul>
+<div class="outs"><b>Selected reported outcomes</b><ul><li>200+ Kaizen projects led or contributed to; cumulative savings above ₹5 crore across initiatives</li><li>AHU condensate recovery: about ₹8 lakh annual savings</li><li>Cleanroom drain-cover replacement: about ₹20 lakh annual savings</li><li>Predictive maintenance: MTTR reduced by about two days</li><li>Inventory dashboard across six units</li><li>Go Getter (H1-FY24) and Achiever (H2-FY24) recognition</li></ul></div></div></div>
+</div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<h2>Expertise</h2>
+<div class="cats"><article class="card"><h3>Operational Excellence and Continuous Improvement</h3><div class="skills"><span>Operational Excellence</span><span>Business Excellence</span><span>Continuous Improvement</span><span>Lean Manufacturing</span><span>Lean Six Sigma</span><span>DMAIC</span><span>Kaizen</span><span>5S</span><span>SMED</span><span>Value Stream Mapping</span><span>Root Cause Analysis</span><span>5 Why</span><span>Fishbone Analysis</span><span>Poka-Yoke</span><span>Waste Reduction</span><span>Standardization</span></div></article><article class="card"><h3>Industrial Engineering</h3><div class="skills"><span>Productivity Improvement</span><span>Process Optimization</span><span>Manufacturing Efficiency</span><span>OEE Improvement</span><span>Line Balancing</span><span>Manpower Optimization</span><span>Process Flow Analysis</span><span>Production Planning</span><span>Manufacturing KPI Monitoring</span></div></article><article class="card"><h3>Digital Manufacturing and Application Development</h3><div class="skills"><span>MES</span><span>ERP Workflows</span><span>Manufacturing Dashboards</span><span>Digital Logbooks</span><span>Machine and Production Monitoring</span><span>Calibration Tracking</span><span>Digital Compliance Monitoring</span><span>Application Logic and Module Design</span><span>Workflow Design</span></div></article><article class="card"><h3>Data Analytics and Technology</h3><div class="skills"><span>Power BI</span><span>Advanced Excel</span><span>Python</span><span>MySQL</span><span>SAP</span><span>IoT-enabled Predictive Maintenance</span><span>Data Analysis and Visualization</span><span>KPI Reporting</span></div></article></div>
+<p class="note">Technologies are listed as used in projects. Time studies, line balancing and capacity work are included only where they reflect my actual projects.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Featured projects</h2>
+<div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+<div class="pgrid" id="pgrid"></div>
+<p class="note">Diagrams in project details are illustrative workflows, not screenshots of company systems. Outcomes are reported project results and keep their original scope.</p>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+<h2>Certifications and awards</h2>
+<div class="certs">
+<article class="card"><h3>Lean Six Sigma Green Belt</h3><p>Completed at Biocon Group Centre of Excellence, June 2025. Certificate shown below.</p></article>
+<article class="card"><h3>Lean Six Sigma Yellow Belt</h3><p>Completed at Biocon Group Centre of Excellence, June 2025. Certificate shown below.</p></article>
+<article class="card"><h3>Microsoft Azure Data Fundamentals</h3><p>Exam DP-900. Also: Fundamentals of Data Analysis, Coding Ninjas.</p></article>
+</div>
+<h3 class="gal-h">Lean Six Sigma belts</h3>
+<div class="gallery" data-g="lss"></div>
+<h3 class="gal-h">Awards and recognition</h3>
+<p class="gal-p">Group-level and national Kaizen recognition, plus performance awards at Biocon Biologics.</p>
+<div class="gallery" data-g="award"></div>
+<h3 class="gal-h">IDEA (Kaizen) implementations</h3>
+<p class="gal-p">Sixteen improvements implemented and certified in December 2024.</p>
+<div class="gallery" data-g="idea"></div>
+<ul class="early"><li>GATE 2020 qualified, Mechanical Engineering</li><li>Coordinator and participant, National Level Working Model Competition; participant, Annual Fiesta at SISTec, RGPV</li></ul>
+<p style="margin-top:1.5rem"><a class="btn" href="https://drive.google.com/file/d/1Gyx8HUSTNc4R0mKeyCU3ajFQKwwDhpJB/view?usp=sharing" target="_blank" rel="noopener">Open the full certificate file</a></p>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2 style="color:var(--ink);font-size:2.2rem;margin-bottom:.6rem">Let’s talk</h2>
+<p style="max-width:40rem">I’m open to opportunities in Operational Excellence, Industrial Engineering, Manufacturing Excellence and Digital Transformation.</p>
+<p><a class="btn main" href="mailto:harshilmishra26@gmail.com">harshilmishra26@gmail.com</a></p>
+<p class="links" style="font-size:.9rem">Harshil Mishra · <a href="https://harshilmishra9.github.io">harshilmishra9.github.io</a> · © 2026</p>
+</div></footer>
+
+<dialog class="pm" id="pm" aria-label="Project details"><div id="pmc"></div><button class="btn close" type="button" id="pmx">Close</button></dialog>
+<dialog class="lb" id="lb" aria-label="Certificate viewer"><div class="lb-in"><img id="lbimg" alt=""><div class="lb-bar"><p id="lbcap"></p><button type="button" id="lbprev">Previous</button><button type="button" id="lbnext">Next</button><button type="button" id="lbclose">Close</button></div></div></dialog>
+
+<script>
+var CERTS=[{"g": "lss", "t": "Lean Six Sigma Green Belt", "s": "Biocon Group Centre of Excellence, June 2025", "src": "certificates/lss-green-belt.jpg"}, {"g": "lss", "t": "Lean Six Sigma Yellow Belt", "s": "Biocon Group Centre of Excellence, June 2025", "src": "certificates/lss-yellow-belt.jpg"}, {"g": "award", "t": "Best IDEA (Kaizen) Award", "s": "Biocon Group COE half-yearly awards, 2024: AHU Condensate Recovery", "src": "certificates/award-best-idea.jpg"}, {"g": "award", "t": "Silver Award, 50th CII National Kaizen Competition", "s": "Chennai: case study on AHU Condensate Recovery", "src": "certificates/award-cii-silver.jpg"}, {"g": "award", "t": "Go Getter Award, H1-FY24", "s": "Biocon Biologics certificate of appreciation", "src": "certificates/award-go-getter.jpg"}, {"g": "award", "t": "Achiever Award, H2-FY24", "s": "Biocon Biologics certificate of appreciation", "src": "certificates/award-achiever.jpg"}, {"g": "idea", "t": "Secondary pump replacement", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-secondary-pump.jpg"}, {"g": "idea", "t": "AHU condensate recovery: saving ETP cost", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-ahu-condensate.jpg"}, {"g": "idea", "t": "Primary garment collection bin", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-garment-bin.jpg"}, {"g": "idea", "t": "Prevention of cable damage and safer material movement", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-cable-damage.jpg"}, {"g": "idea", "t": "Temperature sensor and hooter alarm for the UPS room", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-ups-alarm.jpg"}, {"g": "idea", "t": "Preventing rainwater spillage inside the cleanroom", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-rainwater.jpg"}, {"g": "idea", "t": "Fewer environmental monitoring excursions by fixing mezzanine water leaks", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-em-excursion.jpg"}, {"g": "idea", "t": "Drain cover replacement", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-drain-cover.jpg"}, {"g": "idea", "t": "SS grills in return risers", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-ss-grills.jpg"}, {"g": "idea", "t": "Bio-waste backflow: flash tank and kill plant drain line modification", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-biowaste.jpg"}, {"g": "idea", "t": "AHU display stands", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-ahu-stands.jpg"}, {"g": "idea", "t": "Drop box", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-drop-box.jpg"}, {"g": "idea", "t": "Preventing DP plate bond loosening on panels at B1", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-dp-plates.jpg"}, {"g": "idea", "t": "Upgrading sticky pictograms to acrylic display boards", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-pictograms.jpg"}, {"g": "idea", "t": "Shoe change room removal and shoe racks at entry and exit rooms", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-shoe-racks.jpg"}, {"g": "idea", "t": "Garment cubicles replaced with secondary garment cupboards", "s": "IDEA (Kaizen), Dec 2024", "src": "certificates/idea-garment-cupboards.jpg"}];
+var PROJECTS=[{"id": "chrysalis", "cat": "Digital Manufacturing", "t": "Chrysalis: integrated MES cum ERP application", "card": "An integrated MES cum ERP application that brings six manufacturing workflows into one place.", "problem": "Production, procurement, calibration, scrap, and quality and safety information needed to be tracked and viewed in one place, with less reliance on manual tracking.", "solution": "Designed and implemented an integrated MES cum ERP application with six modules: PR/PO Management, Machine Line Dashboard, Digital Logbook, Scrap Management, Calibration Module, and BOS/BOQ Module (adherence monitoring against defined quality and safety requirements).", "contrib": "Designed the application logic and module structure, defined workflows and implementation requirements, and translated operational requirements into digital modules.", "tools": ["MES", "ERP workflows", "Application logic design", "Workflow design"], "out": "Centralized operational visibility, better accessibility of records, and structured monitoring of calibration, scrap, quality and safety requirements.", "note": "No quantified productivity, compliance, cost or cycle-time improvement is claimed. Measurements have not been supplied.", "kind": "modules", "flow": ["PR/PO Management", "Machine Line Dashboard", "Digital Logbook", "Scrap Management", "Calibration Module", "BOS/BOQ Module"]}, {"id": "scheduler", "cat": "Analytics & Planning", "t": "Python-based production scheduler", "card": "A Python tool that generates an ideal monthly production plan from defined planning parameters.", "problem": "Monthly production plans needed a structured, repeatable way to be generated, with less manual scheduling effort.", "solution": "Developed a Python scheduling tool that generates a structured monthly production schedule, supports allocation and sequencing of production requirements, and helps planners visualize the intended plan.", "contrib": "Developed the scheduling logic in Python and translated production-planning requirements into a programmatic workflow.", "tools": ["Python", "Production planning"], "out": "A foundation for more consistent production planning and less manual scheduling effort.", "note": "No time-saving or planning-accuracy figures are claimed, and the tool is not described as optimizing capacity, changeovers or material availability.", "kind": "flow", "flow": ["Planning parameters", "Scheduling logic (Python)", "Ideal monthly plan", "Plan view for planners"]}, {"id": "inventory", "cat": "Analytics & Planning", "t": "Inventory management and visibility dashboard", "card": "A centralized Power BI dashboard covering inventory across six units and stores.", "problem": "Inventory information across six units and stores was hard to see in one place, limiting control over aging stock, movement and availability.", "solution": "Consolidated inventory data into a centralized Power BI dashboard showing aging, movement and stock availability, with reporting and exception identification to support replenishment and control decisions.", "contrib": "", "tools": ["Power BI", "Advanced Excel", "SAP", "Inventory analysis", "Lean process improvement"], "out": "Reported: inventory lead time from 55+ days to about 10 days; about 20% less aging inventory; about 15% fewer stockouts and overstocking; about 50% less reporting time.", "note": "Reported project outcomes, measured with the original project’s definitions. The dashboard alone may not account for every result.", "kind": "flow", "flow": ["SAP and Excel data", "Power BI dashboard", "Aging, movement, availability", "Exceptions and replenishment"]}, {"id": "ahu", "cat": "Engineering Improvement", "t": "AHU condensate recovery", "card": "Recovering and reusing AHU condensate to cut water wastage and cost.", "problem": "AHU condensate was being wasted instead of being reused as a resource.", "solution": "An engineering improvement initiative to recover and reuse AHU condensate, reducing water wastage and improving resource utilization. Presented as a resource-efficiency and cost-optimization case study.", "contrib": "", "tools": ["Kaizen", "Data analysis", "Engineering improvement"], "out": "Reported: about ₹8 lakh annual savings, plus reuse of non-moving inventory worth about ₹16.5 lakh (a one-time value, not recurring). Silver award at the 50th CII National Kaizen Competition, Chennai.", "note": "The inventory reuse value is not added to the annual savings.", "kind": "flow", "flow": ["AHU condensate", "Recovery", "Reuse", "Less water wastage"]}, {"id": "predictive", "cat": "Digital Manufacturing", "t": "Predictive maintenance", "card": "IoT sensors, cloud connectivity and SAP integration for better equipment monitoring.", "problem": "Equipment monitoring and repair response needed to move toward earlier, data-based maintenance decisions.", "solution": "An initiative using IoT sensors, cloud connectivity and SAP integration to support predictive maintenance and better equipment monitoring.", "contrib": "", "tools": ["IoT sensors", "Cloud", "SAP", "MTBF and MTTR tracking"], "out": "Reported: MTTR reduced by about two days.", "note": "Describes the implemented scope as reported. Future-state features that may not be deployed are not claimed.", "kind": "flow", "flow": ["IoT sensors", "Cloud", "SAP integration", "Maintenance decisions"]}, {"id": "smed", "cat": "Lean & Continuous Improvement", "t": "SMED and equipment changeover improvement", "card": "Simplifying changeover when moving from a bioreactor vessel arrangement to single-use bioreactors.", "problem": "Changeover activities in the existing bioreactor vessel arrangement were complex.", "solution": "A changeover improvement project for the transition from a bioreactor vessel arrangement to single-use bioreactors, applying SMED principles and process improvement to simplify changeover activities.", "contrib": "", "tools": ["SMED", "Process improvement", "Lean manufacturing"], "out": "Simpler changeover activities and improved operational efficiency.", "note": "No changeover-time, savings or throughput figures are claimed.", "kind": "flow", "flow": ["Changeover activities", "SMED analysis", "Single-use bioreactors", "Simpler changeover"]}, {"id": "drain", "cat": "Engineering Improvement", "t": "Cleanroom drain-cover replacement", "card": "Replacing drain covers in cleanroom areas to reduce recurring expenditure.", "problem": "The existing drain covers were not well suited to the operating environment and led to recurring expenditure.", "solution": "An engineering improvement replacing drain covers in cleanroom areas, aimed at a solution better suited to the operational environment.", "contrib": "", "tools": ["Engineering improvement", "Cost optimization"], "out": "Reported: about ₹20 lakh annual savings.", "note": "No contamination-reduction or validated GMP compliance claims are made.", "kind": "flow", "flow": ["Existing drain covers", "Replacement", "Suited to environment", "Lower recurring cost"]}, {"id": "kaizen", "cat": "Lean & Continuous Improvement", "t": "Operational excellence and Kaizen portfolio", "card": "Kaizen, 5S, SMED, OEE and standardization initiatives across manufacturing and engineering.", "problem": "Ongoing losses and waste across manufacturing and engineering areas.", "solution": "A body of improvement initiatives spanning Kaizen, 5S, SMED, OEE, waste reduction and process standardization. Sixteen certified IDEA (Kaizen) implementations from December 2024 are shown under Certifications.", "contrib": "", "tools": ["Kaizen", "5S", "SMED", "OEE", "Lean Six Sigma"], "out": "Reported at portfolio level: 200+ Kaizen projects and cumulative savings above ₹5 crore.", "note": "Portfolio-level figures led or contributed to, not the result of a single project.", "kind": "flow", "flow": ["Identify losses", "Kaizen and 5S", "Standardize", "Review results"]}];
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function E(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+/* theme */
+var root=document.documentElement,btn=document.getElementById('theme');
+try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s)}catch(e){}
+btn.addEventListener('click',function(){var n=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}});
+/* projects */
+var cats=['All'];PROJECTS.forEach(function(p){if(cats.indexOf(p.cat)<0)cats.push(p.cat)});
+var fb=document.getElementById('filters'),grid=document.getElementById('pgrid'),pm=document.getElementById('pm'),pmc=document.getElementById('pmc');
+cats.forEach(function(c,i){var b=E('button','',c);b.type='button';b.setAttribute('aria-pressed',i===0);b.addEventListener('click',function(){
+fb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+grid.querySelectorAll('.pc').forEach(function(card){card.hidden=!(c==='All'||card.dataset.cat===c)})});fb.appendChild(b)});
+function chips(a){var d=E('div','chips');a.forEach(function(t){d.appendChild(E('span','',t))});return d}
+function sec(h,t){var f=document.createDocumentFragment();f.appendChild(E('h4','',h));f.appendChild(E('p','',t));return f}
+function detail(p){pmc.textContent='';pmc.appendChild(E('div','tag',p.cat));pmc.appendChild(E('h3','',p.t));
+pmc.appendChild(sec('Business problem',p.problem));pmc.appendChild(sec('Solution and implementation',p.solution));
+if(p.contrib)pmc.appendChild(sec('My contribution',p.contrib));
+pmc.appendChild(E('h4','','Tools and methods'));pmc.appendChild(chips(p.tools));
+pmc.appendChild(sec('Outcome',p.out));
+pmc.appendChild(E('h4','',p.kind==='modules'?'Modules':'Workflow'));
+var f=E('div','flow');p.flow.forEach(function(x,i){if(i&&p.kind==='flow')f.appendChild(E('i','','\u2192'));f.appendChild(E('span','',x))});pmc.appendChild(f);
+pmc.appendChild(E('p','ill','Illustrative diagram, not a screenshot of a company system.'));
+pmc.appendChild(sec('Scope note',p.note));
+pm.showModal()}
+PROJECTS.forEach(function(p){var c=E('article','card pc');c.dataset.cat=p.cat;
+c.appendChild(E('div','tag',p.cat));c.appendChild(E('h3','',p.t));c.appendChild(E('p','',p.card));
+c.appendChild(chips(p.tools.slice(0,3)));
+var b=E('button','btn','View Details');b.type='button';b.addEventListener('click',function(){detail(p)});c.appendChild(b);grid.appendChild(c)});
+document.getElementById('pmx').addEventListener('click',function(){pm.close()});
+pm.addEventListener('click',function(e){if(e.target===pm)pm.close()});
+/* gallery */
+var cur=[],idx=0,dlg=document.getElementById('lb'),img=document.getElementById('lbimg'),cap=document.getElementById('lbcap');
+document.querySelectorAll('.gallery').forEach(function(box){
+var g=box.getAttribute('data-g'),list=CERTS.filter(function(c){return c.g===g});
+list.forEach(function(c,i){var b=E('button','thumb');b.type='button';
+var im=E('img');im.src=c.src;im.alt=c.t+' certificate';im.loading='lazy';
+b.appendChild(im);b.appendChild(E('span','',c.t));
+b.addEventListener('click',function(){cur=list;open(i)});box.appendChild(b)})});
+function open(i){idx=(i+cur.length)%cur.length;var c=cur[idx];img.src=c.src;img.alt=c.t+' certificate';
+cap.textContent='';cap.appendChild(E('strong','',c.t));cap.appendChild(E('small','',c.s));if(!dlg.open)dlg.showModal()}
+document.getElementById('lbprev').addEventListener('click',function(){open(idx-1)});
+document.getElementById('lbnext').addEventListener('click',function(){open(idx+1)});
+document.getElementById('lbclose').addEventListener('click',function(){dlg.close()});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+/* progress, reveal, counters, nav */
+var prog=document.getElementById('prog');
+function sc(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;prog.style.transform='scaleX('+(m>0?h.scrollTop/m:0)+')'}
+addEventListener('scroll',sc,{passive:true});sc();
+var targets=document.querySelectorAll('section .wrap > *, .job, .card, .skills span, .thumb, .m');
+targets.forEach(function(e,i){e.classList.add('rv');e.style.setProperty('--d',(i%6)*0.07+'s')});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');(function(t){setTimeout(function(){t.style.removeProperty('--d')},1400)})(x.target);io.unobserve(x.target)}})},{threshold:.1});
+targets.forEach(function(e){io.observe(e)});
+function count(b){var n=+b.dataset.n,s=b.dataset.s,p=b.dataset.p||'',t0=null;
+function f(t){if(!t0)t0=t;var k=Math.min((t-t0)/1300,1);b.textContent=p+Math.round(n*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(f)}
+requestAnimationFrame(f)}
+var co=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){if(!rm)count(x.target);co.unobserve(x.target)}})},{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(function(b){co.observe(b)});
+var links=document.querySelectorAll('nav a'),so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('#home,main section[id],footer[id]').forEach(function(s){so.observe(s)});
+})();
+</script>
+</body>
+</html>
